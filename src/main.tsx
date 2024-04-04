@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import './main.css'
+import RoomSchedCaller from "./RoomSchedCaller.tsx";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <RoomSchedCaller/>
   </React.StrictMode>,
 )
