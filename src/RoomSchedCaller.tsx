@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import RoomSched from "./RoomSched.tsx";
-//import RoomTable from "./RoomTable.tsx";
 
 
 function RoomSchedCaller(){
