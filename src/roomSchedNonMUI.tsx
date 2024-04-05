@@ -1,6 +1,6 @@
 import React, {FormEvent, useState} from "react";
 
-function Temp() {
+function RoomSchedNonMUI() {
     const initialFormState = {
         employName: "",
         startTime: "",
@@ -32,9 +32,14 @@ function Temp() {
 
     return (
         <div>
+
+            {/*Header for Page*/}
             <div>
                 <h1>Schedule A Room:</h1>
             </div>
+
+
+            {/*Request Form*/}
             <div>
                 <form>
                     <div>
@@ -104,32 +109,42 @@ function Temp() {
 
             <br/>
 
-            <table>
-                <thead>
-                <tr>
-                    <th>Employee Name</th>
-                    <th>Start Time</th>
-                    <th>Length of Reservation</th>
-                    <th>Room Number</th>
-                    <th>Request Status</th>
-                    <th>Priority</th>
-                </tr>
-                </thead>
-                <tbody>
-                {submittedData.map((data, index) => (
-                    <tr key={index}>
-                        <td>{data.employName}</td>
-                        <td>{data.startTime}</td>
-                        <td>{data.lengthRes}</td>
-                        <td>{data.roomNum}</td>
-                        <td>{data.reqStatus}</td>
-                        <td>{data.priority}</td>
+            {/*Header for Table*/}
+            <div>
+                <h2>Submitted Room Reservations:</h2>
+            </div>
+
+
+            {/*Table of submitted requests*/}
+            <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Start Time</th>
+                        <th>Length of Reservation</th>
+                        <th>Room Number</th>
+                        <th>Request Status</th>
+                        <th>Priority</th>
                     </tr>
-                ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {submittedData.map((data, index) => (
+                        <tr key={index}>
+                            <td>{data.employName}</td>
+                            <td>{data.startTime}</td>
+                            <td>{data.lengthRes}</td>
+                            <td>{data.roomNum}</td>
+                            <td>{data.reqStatus}</td>
+                            <td>{data.priority}</td>
+                        </tr>
+                    ))}
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     );
 }
 
-export default Temp;
+export default RoomSchedNonMUI;

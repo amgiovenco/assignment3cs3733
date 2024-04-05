@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './main.css'
-import Temp from "./temp.tsx";
+//import RoomSched from "./roomSched.tsx";
+import RoomSchedNonMUI from "./roomSchedNonMUI.tsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-     <Temp></Temp>
+    <RoomSchedNonMUI/>
   </React.StrictMode>,
 )
-
