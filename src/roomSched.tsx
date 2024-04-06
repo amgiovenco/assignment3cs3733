@@ -22,8 +22,9 @@ function RoomSched() {
         priority: ""
     };
 
-    const [formState, setFormState] = useState(initialFormState);
-    const [submittedData, setSubmittedData] = useState([]);
+    const [submittedData, setSubmittedData] = useState<any[]>([]);
+    const [formState, setFormState] = useState<typeof initialFormState>(initialFormState);
+
 
     const handleChange = (event: SelectChangeEvent<string> | React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = event.target;

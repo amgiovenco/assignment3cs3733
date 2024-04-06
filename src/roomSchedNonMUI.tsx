@@ -11,8 +11,8 @@ function RoomSchedNonMUI() {
     };
 
 
-    const [formState, setFormState] = useState(initialFormState);
-    const [submittedData, setSubmittedData] = useState([]);
+    const [submittedData, setSubmittedData] = useState<any[]>([]);
+    const [formState, setFormState] = useState<typeof initialFormState>(initialFormState);
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = event.target;
