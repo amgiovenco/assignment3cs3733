@@ -129,14 +129,14 @@ function RoomSchedNonMUI() {
                     </tr>
                     </thead>
                     <tbody>
-                    {submittedData.map((data, index) => (
+                    {submittedData.map(({employName, lengthRes, priority, reqStatus, roomNum, startTime}, index) => (
                         <tr key={index}>
-                            <td>{data.employName}</td>
-                            <td>{data.startTime}</td>
-                            <td>{data.lengthRes}</td>
-                            <td>{data.roomNum}</td>
-                            <td>{data.reqStatus}</td>
-                            <td>{data.priority}</td>
+                            <td>{employName}</td>
+                            <td>{startTime}</td>
+                            <td>{lengthRes}</td>
+                            <td>{roomNum}</td>
+                            <td>{reqStatus}</td>
+                            <td>{priority}</td>
                         </tr>
                     ))}
                     </tbody>

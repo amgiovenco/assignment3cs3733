@@ -125,14 +125,14 @@ function RoomSched() {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {submittedData.map((data, index) => (
+                        {submittedData.map(({employName, lengthRes, priority, reqStatus, roomNum, startTime}, index) => (
                             <TableRow key={index}>
-                                <TableCell>{data.employName}</TableCell>
-                                <TableCell>{data.startTime}</TableCell>
-                                <TableCell>{data.lengthRes}</TableCell>
-                                <TableCell>{data.roomNum}</TableCell>
-                                <TableCell>{data.reqStatus}</TableCell>
-                                <TableCell>{data.priority}</TableCell>
+                                <TableCell>{employName}</TableCell>
+                                <TableCell>{startTime}</TableCell>
+                                <TableCell>{lengthRes}</TableCell>
+                                <TableCell>{roomNum}</TableCell>
+                                <TableCell>{reqStatus}</TableCell>
+                                <TableCell>{priority}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
