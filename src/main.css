@@ -1,3 +1,80 @@
-body{
-  background-color: grey;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
+body{
+  background-color: #FFFFFF;
+}
+.comfortaa{
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Comfortaa", sans-serif;
+  color: #002866;
+}
+h2 {
+  font-size: 25px;
+  font-family: "Comfortaa", sans-serif;
+  color: #002866;
+}
+label {
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
+  color: #002866;
+}
+input {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+  font-family: "Comfortaa", sans-serif;
+  color: #000000;
+  border: 1px solid #002866;
+  border-radius: 5px;
+}
+button {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+  font-family: "Comfortaa", sans-serif;
+  color: #002866;
+  background-color: #ffffff;
+  border: 1px solid #002866;
+  border-radius: 5px;
+}
+select {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+  font-family: "Comfortaa", sans-serif;
+  color: #000000;
+  border-radius: 5px;
+  border: 1px solid #002866;
+}
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Comfortaa", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid #002866;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+

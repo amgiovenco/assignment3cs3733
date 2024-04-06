@@ -1,4 +1,5 @@
 import React, {FormEvent, useState} from "react";
+import "./main.css";
 
 function RoomSchedNonMUI() {
     const initialFormState = {
@@ -35,7 +36,9 @@ function RoomSchedNonMUI() {
 
             {/*Header for Page*/}
             <div>
-                <h1>Schedule A Room:</h1>
+                <h1>
+                    Room Request Form
+                </h1>
             </div>
 
 
